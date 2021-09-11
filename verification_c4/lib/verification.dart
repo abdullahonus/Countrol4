@@ -91,18 +91,13 @@ class _VerificatoinState extends State<Verificatoin> {
                 ),
               ),
               SizedBox(height: 80),
-              Text(
-                "Verification",
-                style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
-              ),
               SizedBox(
                 height: 30,
               ),
               Text(
                 "Lütfen +90 553-367-1989 numaraya gönderilen 6 haneli doğrulama kodunu giriniz. ",
                 textAlign: TextAlign.center,
-                style: TextStyle(
-                    fontSize: 16, height: 1.5, color: Colors.grey[900]),
+                style: TextStyle(fontSize: 16, height: 1.5, color: Colors.grey),
               ),
               SizedBox(
                 height: 30,
@@ -154,7 +149,7 @@ class _VerificatoinState extends State<Verificatoin> {
                 height: 50,
               ),
               MaterialButton(
-                  disabledColor: Colors.grey[700],
+                  disabledColor: Colors.grey[900],
                   height: 50,
                   onPressed: _code.length < 6
                       ? null
@@ -172,7 +167,7 @@ class _VerificatoinState extends State<Verificatoin> {
                           child: CircularProgressIndicator(
                             backgroundColor: Colors.white,
                             strokeWidth: 3,
-                            color: Colors.black,
+                            color: Colors.white,
                           ),
                         )
                       : _isVerified
@@ -185,6 +180,13 @@ class _VerificatoinState extends State<Verificatoin> {
                               'Doğrula',
                               style: TextStyle(color: Colors.white),
                             )),
+              SizedBox(
+                height: 30,
+              ),
+              Text(
+                "@Countrol4offical",
+                style: TextStyle(color: Colors.white, fontSize: 15),
+              )
             ],
           ),
         ),
