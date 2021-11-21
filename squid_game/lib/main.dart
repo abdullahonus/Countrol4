@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
       title: 'Countrol4Offical',
       home: Scaffold(
           appBar: AppBar(
+            centerTitle: true,
             backgroundColor: Colors.black,
             title: const Text('Squied GAME'),
           ),
